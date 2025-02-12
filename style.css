@@ -802,7 +802,7 @@ h3.my-profession
     height: 50px;
     padding: 0 50px;
 }
-@media (max-width:1299px)
+@media (max-width:1199px)
 {
     .section container
     {
@@ -839,7 +839,7 @@ h3.my-profession
         margin-left: 0;
     }
 }
-@media (max-width:1100px)
+@media (max-width:991px)
 {   
     .contact .contact-info-item,
     .portfolio .portfolio-item,
@@ -858,7 +858,7 @@ h3.my-profession
         display: none;
     }
 }
-@media (max-width:999px)
+@media (max-width:767px)
 {
     .contact .contact-form .col-6,
     .contact .contact-info-item,

@@ -34,7 +34,7 @@
 }
 .style-switcher .s-icon
 {
-    color: var(--skin-color);
+    color: white;
     line-height: 40px;
 }
 .style-switcher .s-icon:hover
