@@ -5,7 +5,7 @@
     top: 60px;
     padding: 15px;
     width: 200px;
-    border: 1px solid var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
     background: var(--bg-black-100);
     z-index: 101;
     border-radius: 5px;
@@ -26,7 +26,7 @@
     background: var(--bg-black-100);
     color: var(--text-black-900);
     right: 100%;
-    border: 1px solid var(--skin-color);
+    border: 1px solid var(--bg-black-50);
     margin-right: 25px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -34,7 +34,6 @@
 }
 .style-switcher .s-icon
 {
-    color: var(--skin-color);
     line-height: 40px;
 }
 .style-switcher .s-icon:hover
@@ -52,7 +51,7 @@
 .style-switcher h4
 {
     margin: 0 0 10px;
-    color: var(--skin-color);
+    color: var(--text-black-700);
     font-size: 16px;
     font-weight: 600;
     text-transform: capitalize;
