@@ -79,6 +79,10 @@ ul
 {
     display: none !important;
 }
+.main-content
+{
+    padding-left: 270px;
+}
 .padd-15
 {
     padding-left: 15px;
@@ -810,7 +814,11 @@ h3.my-profession
     }
     .aside
     {
-        left: -270px
+        left: -270px;
+    }
+    .main-content
+    {
+        padding-left: 0;
     }
     .aside.open
     {
