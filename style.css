@@ -117,7 +117,7 @@ ul
     content: '';
     position: absolute;
     height: 4px;
-    width: 50px;
+    width: 65px;
     background-color: var(--skin-color);
     top: 100%;
     left: 0;
@@ -127,7 +127,7 @@ ul
     content: '';
     position: absolute;
     height: 4px;
-    width: 25px;
+    width: 40px;
     background-color: var(--skin-color);
     top: 100%;
     left: 0;
@@ -144,7 +144,8 @@ ul
 .btn
 {
     font-size: 16px;
-    font-weight: 500;
+    letter-spacing: 1px;
+    font-weight: 600;
     padding: 12px 35px;
     color: white;
     border-radius: 40px;
@@ -152,7 +153,6 @@ ul
     white-space: nowrap;
     border: none;
     background: var(--skin-color);
-    transition: all 0.3s ease;
 }
 .btn:hover
 {
@@ -320,13 +320,14 @@ ul
 }
 .home .home-info
 {
+    margin-top: 45px;
     flex: 0 0 60%;
     max-width: 60%;
 }
 h3.hello
 {
     font-size: 28px;
-    margin: 15px 0;
+    margin: 1px 0;
 }
 h3.hello span
 {
@@ -335,18 +336,36 @@ h3.hello span
     font-weight: 700;
     color: var(--skin-color);
 }
-h3.my-profession
-{
-    font-size: 30px;
-    margin: 15px 0;
+.change-text h3{
+    display: inline-flex;
+    margin: 0;
+    vertical-align: top;
+    font-size: 25px;
 }
-.typing
+.change-text h3 .word
 {
+    position: absolute;
+    display: flex;
+    opacity: 0;
     color: var(--skin-color);
+}
+.change-text h3 .word .letter{
+    transform-origin: center center 25px;
+}
+.change-text h3 .word .letter.out{
+    transform: rotateX(90deg);
+    transition: 0.32s cubic-bezier(0.6,0,0.7,0.2);
+}
+.change-text h3 .word .letter.in{
+    transition: 0.38s ease;
+}
+.change-text h3 .word .letter.behind{
+    transform: rotateX(-90deg);
 }
 .home-info p
 {
-    margin-bottom: 70px;
+    margin-top: 10px;
+    margin-bottom: 30px;
     font-size: 20px;
     color: var(--text-black-700);
 }
@@ -365,8 +384,8 @@ h3.my-profession
     width: 80px;
     border-bottom: 10px solid var(--skin-color);
     border-right: 10px solid var(--skin-color);
-    right: 70px;
-    bottom: -10px;
+    right: 80px;
+    bottom: -20px;
 }
 .home-img::before
 {
@@ -376,7 +395,7 @@ h3.my-profession
     width: 80px;
     border-top: 10px solid var(--skin-color);
     border-left: 10px solid var(--skin-color);
-    left: 70px;
+    left: 80px;
     top: -10px;
 }
 .home .home-img img
@@ -384,26 +403,21 @@ h3.my-profession
     margin: auto;
     border-radius: 5px;
     height: 260px;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 .social-icons
 {
     margin-top: 1rem;
     display: flex;
     justify-content: space-between;
-    width: 170px;
-    height: 40px;
+    width: 175px;
 }
 .social-icons a
 {
     color: var(--skin-color);
 }
 .social-icons a i{
-    font-size: 1.5rem;
-}
-.social-icons a
-{
-    color: var(--skin-color);
+    font-size: 1.6rem;
 }
 .social-icons a:hover
 {
@@ -527,6 +541,12 @@ h3.my-profession
     flex: 0 0 50%;
     max-width: 50%;
     margin-top: 30px;
+}
+.about .about-content .education h4 hi{
+    color: var(--skin-color);
+}
+.about .about-content .education h3 hi{
+    color: var(--skin-color);
 }
 .about .about-content h3.title
 {
