@@ -319,11 +319,11 @@ ul
 }
 .home .section-title .mm
 {
-    margin-top: -5rem;
+    margin-top: -4rem;
 }
 .home .home-info
 {
-    margin-top: -30px;
+    margin-top: 15px;
     flex: 0 0 60%;
     max-width: 60%;
 }
@@ -388,7 +388,7 @@ h3.hello span
     border-bottom: 10px solid var(--skin-color);
     border-right: 10px solid var(--skin-color);
     right: 77px;
-    bottom: 35px;
+    bottom: 40px;
 }
 .home-img::before
 {
@@ -398,8 +398,8 @@ h3.hello span
     width: 80px;
     border-top: 10px solid var(--skin-color);
     border-left: 10px solid var(--skin-color);
-    left: 77px;
-    top: -11px;
+    left: 79px;
+    top: -20px;
 }
 .home .home-img img
 {
