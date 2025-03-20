@@ -319,11 +319,11 @@ ul
 }
 .home .section-title .mm
 {
-    margin-top: -4rem;
+    margin-top: -2rem;
 }
 .home .home-info
 {
-    margin-top: 15px;
+    margin-top: 20px;
     flex: 0 0 60%;
     max-width: 60%;
 }
@@ -387,8 +387,8 @@ h3.hello span
     width: 80px;
     border-bottom: 10px solid var(--skin-color);
     border-right: 10px solid var(--skin-color);
-    right: 77px;
-    bottom: 40px;
+    right: 70px;
+    bottom: 35px;
 }
 .home-img::before
 {
@@ -398,15 +398,15 @@ h3.hello span
     width: 80px;
     border-top: 10px solid var(--skin-color);
     border-left: 10px solid var(--skin-color);
-    left: 79px;
-    top: -20px;
+    left: 70px;
+    top: -19px;
 }
 .home .home-img img
 {
     margin: auto;
     border-radius: 5px;
     height: 230px;
-    margin-top: 8px;
+    margin-top: 15px;
 }
 .social-icons
 {
