@@ -203,7 +203,7 @@ ul
 }
 .btn:hover
 {
-    transform: scale(1.05);
+    transform: scale(1.06);
 }
 .shadow-dark
 {
@@ -366,7 +366,7 @@ ul
 }
 .home .section-title .mm
 {
-    margin-top: -3rem;
+    margin-top: -2.5rem;
 }
 .home .home-info
 {
@@ -415,7 +415,7 @@ h3.hello span
 .home-info p
 {
     margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 45px;
     font-size: 20px;
     color: var(--text-black-700);
 }
@@ -434,8 +434,8 @@ h3.hello span
     width: 80px;
     border-bottom: 10px solid var(--skin-color);
     border-right: 10px solid var(--skin-color);
-    right: 73px;
-    bottom: 15px;
+    right: 77px;
+    bottom: 23px;
 }
 .home-img::before
 {
@@ -445,19 +445,19 @@ h3.hello span
     width: 80px;
     border-top: 10px solid var(--skin-color);
     border-left: 10px solid var(--skin-color);
-    left: 73px;
-    top: -15px;
+    left: 78px;
+    top: -19px;
 }
 .home .home-img img
 {
     margin: auto;
     border-radius: 5px;
     height: 230px;
-    margin-top: 15px;
+    margin-top: 16px;
 }
 .social-icons
 {
-    margin-top: 1.5rem;
+    margin-top: 1.6rem;
     display: flex;
     justify-content: space-between;
     width: 170px;
@@ -698,8 +698,10 @@ h3.hello span
 }
 .service .service-item .service-item-inner:hover
 {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+    transform: scale(1.03);
+    border-color: rgb(255, 0, 0);
+    box-shadow: 0 0 20px rgb(255, 0, 0),
+      inset 0 0 0px rgb(255, 0, 0);
 }
 .service .service-item .service-item-inner .icon
 {
@@ -748,7 +750,6 @@ h3.hello span
 }
 .portfolio .portfolio-heading
 {
-    margin-top: -30px;
     flex: 0 0 100%;
     max-width: 100%;
     margin-bottom: 20px;
@@ -762,18 +763,20 @@ h3.hello span
 {
     flex: 0 0 33.33%;
     max-width: 33.33%;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 .portfolio .portfolio-item-inner
 {
-    border: 4px solid var(--bg-black-100);
-    border-radius: 15px;
+    border: 2.5px solid var(--bg-black-100);
+    border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
 }
 .portfolio .portfolio-item-inner:hover
 {
-    transform: scale(1.06);
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgb(255, 0, 0),
+      inset 0 0 0px rgb(255, 0, 0);
 }
 .portfolio .portfolio-item-inner .portfolio-img img
 {
@@ -867,7 +870,9 @@ h3.hello span
 }
 .contact .contact-form .form-item .form-control:focus
 {
-    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+
+    box-shadow: 0 0 20px rgb(255, 0, 0),
+      inset 0 0 0px rgb(255, 0, 0);
 }
 .contact .contact-form .form-item textarea.form-control
 {

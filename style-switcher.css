@@ -2,15 +2,18 @@
 {
     position: fixed;
     right: 0;
-    top: 60px;
+    top: 45px;
     padding: 15px;
     width: 200px;
     border: 1px solid var(--bg-black-50);
     background: var(--bg-black-100);
     z-index: 101;
-    border-radius: 5px;
+    border-radius: 25px;
     transform: translateX(100%);
     transition: all 0.3s ease;
+    border-color: rgb(255, 0, 0);
+    box-shadow: 0 0 20px rgb(255, 0, 0),
+      inset 0 0 0px rgb(255, 0, 0);
 }
 .style-switcher.open
 {
@@ -30,7 +33,35 @@
     margin-right: 25px;
     cursor: pointer;
     transition: all 0.3s ease;
-    border-radius: 50%;
+    border-radius: 100%;
+}
+.style-switcher .s-icon::before{
+    content: "";
+    background: linear-gradient(
+        45deg,
+        #002bff, #ff7300, #ff0000dc, #0033ff,
+        #ff00bf, #002bff, #ff00c8, #bd0707
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 500px;
+    opacity: 0;
+}
+@keyframes glowing {
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+}
+.style-switcher .s-icon:hover::before{
+    opacity: 1;
 }
 .style-switcher .s-icon
 {
